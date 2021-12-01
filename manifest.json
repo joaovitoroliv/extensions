@@ -1,0 +1,17 @@
+{
+    "name": "ImagensBR",
+    "version": "1.0",
+    "description": "Extensão Javascript que muda e conta todas as imagens dos sites terminados em br.",
+    "content_scripts": [
+        {
+            "matches": ["https://*.br/*"],
+            "js": ["page.js"]
+        }
+    ],
+    "icons": {
+        "16": "donut.png",
+        "48": "donut.png",
+        "128": "donut.png"
+    },
+    "manifest_version": 3
+    }
