@@ -1,16 +1,16 @@
-//Percorrer o DOM
-function walkTree (root,level){
-    if (root.nodeType == Node.TEXT_NODE){
-        console.log(level + 'text:' + root.textContent);
-    } else {
-        console.log (level + root.nodeName);
-    }
-    for (const child of root.childNodes){
-        walkTree(child, level + "  ");
-    }
-}
-walkTree(document.querySelector('html'), "");
-
+// Como visualizar o DOM:
+// function walkTree (root,level){
+//     if (root.nodeType == Node.TEXT_NODE){
+//         console.log(level + 'text:' + root.textContent);
+//     } else {
+//         console.log (level + root.nodeName);
+//     }
+//     for (const child of root.childNodes){
+//         walkTree(child, level + "  ");
+//     }
+// }
+// walkTree(document.querySelector('html'), "");
+/////////////////////////////////////////////////////////////////////////////////////
 const linkImagem = "https://images.vexels.com/media/users/3/151623/isolated/lists/7bfcfa638555045165fb97bfcce2110c-caramelo-de-chocolate.png";
 function numeroImagens(contador){
     const body = document.querySelector('body');
